@@ -4,10 +4,10 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
+with open("README.md", encoding="utf-8") as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
+with open("HISTORY.md", encoding="utf-8") as history_file:
     history = history_file.read()
 
 requirements = [
@@ -44,8 +44,15 @@ setup(
     install_requires=requirements,
     license="GNU General Public License v3",
     long_description=readme + '\n\n' + history,
+    long_description_content_type="text/markdown",
     include_package_data=True,
-    keywords='gpt4free',
+    keywords=[
+        "gpt4free",
+        "ChatGPT",
+        "Free",
+        "FreeChatGPT",
+        "Ai"
+    ],
     name='gpt4free',
     packages=find_packages(include=['gpt4free', 'gpt4free.*']),
     test_suite='tests',
@@ -53,4 +60,11 @@ setup(
     url='https://github.com/rzashakeri/gpt4free',
     version='0.1.0',
     zip_safe=False,
+    project_urls={
+        "Homepage": "https://github.com/rzashakeri/gpt4free",
+        "Issue tracker": "https://github.com/rzashakeri/gpt4free/issues",
+        "Release notes": "https://github.com/rzashakeri/gpt4free/releases",
+        "Source": "https://github.com/rzashakeri/gpt4free",
+        "Discussions": "https://github.com/rzashakeri/gpt4free/discussions",
+    },
 )
