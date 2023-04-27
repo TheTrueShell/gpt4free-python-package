@@ -18,22 +18,22 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from tls_client import Session as TLS
 
-from quora.api import Client as PoeClient
-from quora.mail import Emailnator
+from gpt4free.quora.api import Client as PoeClient
+from gpt4free.quora.mail import Emailnator
 
-SELENIUM_WEB_DRIVER_ERROR_MSG = b'''The error message you are receiving is due to the `geckodriver` executable not 
-being found in your system\'s PATH. To resolve this issue, you need to download the geckodriver and add its location 
-to your system\'s PATH.\n\nHere are the steps to resolve the issue:\n\n1. Download the geckodriver for your platform 
-(Windows, macOS, or Linux) from the following link: https://github.com/mozilla/geckodriver/releases\n\n2. Extract the 
-downloaded archive and locate the geckodriver executable.\n\n3. Add the geckodriver executable to your system\'s 
-PATH.\n\nFor macOS and Linux:\n\n- Open a terminal window.\n- Move the geckodriver executable to a directory that is 
-already in your PATH, or create a new directory and add it to your PATH:\n\n```bash\n# Example: Move geckodriver to 
-/usr/local/bin\nmv /path/to/your/geckodriver /usr/local/bin\n```\n\n- If you created a new directory, add it to your 
-PATH:\n\n```bash\n# Example: Add a new directory to PATH\nexport PATH=$PATH:/path/to/your/directory\n```\n\nFor 
-Windows:\n\n- Right-click on "My Computer" or "This PC" and select "Properties".\n- Click on "Advanced system 
-settings".\n- Click on the "Environment Variables" button.\n- In the "System variables" section, find the "Path" 
-variable, select it, and click "Edit".\n- Click "New" and add the path to the directory containing the geckodriver 
-executable.\n\nAfter adding the geckodriver to your PATH, restart your terminal or command prompt and try running 
+SELENIUM_WEB_DRIVER_ERROR_MSG = b'''The error message you are receiving is due to the `geckodriver` executable not
+being found in your system\'s PATH. To resolve this issue, you need to download the geckodriver and add its location
+to your system\'s PATH.\n\nHere are the steps to resolve the issue:\n\n1. Download the geckodriver for your platform
+(Windows, macOS, or Linux) from the following link: https://github.com/mozilla/geckodriver/releases\n\n2. Extract the
+downloaded archive and locate the geckodriver executable.\n\n3. Add the geckodriver executable to your system\'s
+PATH.\n\nFor macOS and Linux:\n\n- Open a terminal window.\n- Move the geckodriver executable to a directory that is
+already in your PATH, or create a new directory and add it to your PATH:\n\n```bash\n# Example: Move geckodriver to
+/usr/local/bin\nmv /path/to/your/geckodriver /usr/local/bin\n```\n\n- If you created a new directory, add it to your
+PATH:\n\n```bash\n# Example: Add a new directory to PATH\nexport PATH=$PATH:/path/to/your/directory\n```\n\nFor
+Windows:\n\n- Right-click on "My Computer" or "This PC" and select "Properties".\n- Click on "Advanced system
+settings".\n- Click on the "Environment Variables" button.\n- In the "System variables" section, find the "Path"
+variable, select it, and click "Edit".\n- Click "New" and add the path to the directory containing the geckodriver
+executable.\n\nAfter adding the geckodriver to your PATH, restart your terminal or command prompt and try running
 your script again. The error should be resolved.'''
 
 # from twocaptcha import TwoCaptcha

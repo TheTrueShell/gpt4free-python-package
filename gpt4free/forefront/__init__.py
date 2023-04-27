@@ -6,8 +6,8 @@ from uuid import uuid4
 from requests import post
 from tls_client import Session
 
-from forefront.mail import Mail
-from forefront.typing import ForeFrontResponse
+from gpt4free.forefront.mail import Mail
+from gpt4free.forefront.typing import ForeFrontResponse
 
 
 class Account:
