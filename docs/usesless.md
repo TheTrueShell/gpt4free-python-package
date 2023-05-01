@@ -8,7 +8,7 @@ to do:
 ### Example: `usesless` <a name="example-usesless"></a>
 
 ```python
-import usesless
+from gpt4free import usesless
 
 message_id = ""
 while True:
