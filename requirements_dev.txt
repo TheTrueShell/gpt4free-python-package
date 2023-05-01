@@ -1,4 +1,4 @@
-pip==19.2.3
+pip==23.1.2
 bump2version==0.5.11
 wheel==0.33.6
 watchdog==0.9.0
@@ -22,3 +22,7 @@ streamlit==1.21.0
 selenium
 fake-useragent
 twocaptcha
+ffmpeg-downloader==0.2.0
+https://github.com/AI-Yash/st-chat/archive/refs/pull/24/head.zip
+pydantic
+pymailtm
