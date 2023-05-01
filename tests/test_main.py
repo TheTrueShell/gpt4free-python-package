@@ -16,7 +16,3 @@ print(f'END')
 # usage theb
 response = gpt4free.Completion.create(Provider.Theb, prompt='Write a poem on Lionel Messi')
 print(response)
-
-# usage cocalc
-response = gpt4free.Completion.create(Provider.CoCalc, prompt='Write a poem on Lionel Messi', cookie_input='')
-print(response)
