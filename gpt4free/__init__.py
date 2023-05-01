@@ -2,14 +2,13 @@ from enum import Enum
 
 from gpt4free import cocalc
 from gpt4free import forefront
-from gpt4free import quora
 from gpt4free import theb
 from gpt4free import you
 from gpt4free import usesless
 
 __author__ = """Reza Shakeri"""
 __email__ = "rzashakeri@outlook.com"
-__version__ = "0.1.1"
+__version__ = "0.1.4"
 
 
 class Provider(Enum):
@@ -37,9 +36,7 @@ class Completion:
         :param kwargs:  Additional keyword arguments to pass to the provider while invoking
         :return: A string representing the response from the provider
         """
-        if provider == Provider.Poe:
-            return Completion.__poe_service(prompt, **kwargs)
-        elif provider == Provider.You:
+        if provider == Provider.You:
             return Completion.__you_service(prompt, **kwargs)
         elif provider == Provider.ForeFront:
             return Completion.__fore_front_service(prompt, **kwargs)
@@ -59,10 +56,6 @@ class Completion:
     @staticmethod
     def __you_service(prompt: str, **kwargs) -> str:
         return you.Completion.create(prompt, **kwargs).text
-
-    @staticmethod
-    def __poe_service(prompt: str, **kwargs) -> str:
-        return quora.Completion.create(prompt=prompt, **kwargs).text
 
     @staticmethod
     def __fore_front_service(prompt: str, **kwargs) -> str:

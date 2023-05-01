@@ -22,6 +22,8 @@ requirements = [
     "selenium",
     "fake-useragent",
     "twocaptcha",
+    "pydantic",
+    "pymailtm"
 ]
 
 test_requirements = ['pytest>=3', ]
@@ -40,7 +42,7 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
     ],
-    description=" decentralising the Ai Industry, free gpt-4/3.5 scripts through several reverse engineered api's ( poe.com, phind.com, chat.openai.com, writesonic.com, sqlchat.ai, t3nsor.com, you.com etc...)",
+    description="decentralising the Ai Industry, free gpt-4/3.5 scripts through several reverse engineered api's",
     install_requires=requirements,
     license="GNU General Public License v3",
     long_description=readme + "\n\n" + history,
@@ -58,7 +60,7 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/rzashakeri/gpt4free',
-    version='0.1.1',
+    version='0.1.4',
     zip_safe=False,
     project_urls={
         "Homepage": "https://github.com/rzashakeri/gpt4free",
