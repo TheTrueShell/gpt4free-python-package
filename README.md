@@ -2,7 +2,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Downloads](https://static.pepy.tech/personalized-badge/gpt4free?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/gpt4free)
 
-#gpt4free
+# gpt4free
 
 decentralising the Ai Industry, just some language model api's... based on [gpt4free repository](https://github.com/xtekky/gpt4free)
 
