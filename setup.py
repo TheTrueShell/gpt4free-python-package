@@ -23,7 +23,8 @@ requirements = [
     "fake-useragent",
     "twocaptcha",
     "pydantic",
-    "pymailtm"
+    "pymailtm",
+    "beautifulsoup4"
 ]
 
 test_requirements = ['pytest>=3', ]
