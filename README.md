@@ -11,6 +11,7 @@ decentralising the Ai Industry, just some language model api's... based on [gpt4
 2. theb
 3. forefront
 4. usesless
+5. italygpt
 
 ## How Use ?
 
