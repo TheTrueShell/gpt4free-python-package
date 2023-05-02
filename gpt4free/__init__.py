@@ -8,7 +8,7 @@ from gpt4free import italygpt
 
 __author__ = """Reza Shakeri"""
 __email__ = "rzashakeri@outlook.com"
-__version__ = "0.1.5"
+__version__ = "1.0.2"
 
 
 class Provider(Enum):
