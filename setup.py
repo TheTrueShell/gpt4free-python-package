@@ -33,7 +33,7 @@ setup(
     author_email='rzashakeri@gmail.com',
     python_requires='>=3.6',
     classifiers=[
-        'Development Status :: 2 - Stable',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
@@ -60,7 +60,7 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/rzashakeri/gpt4free-python-package',
-    version='1.0.0',
+    version='1.0.1',
     zip_safe=False,
     project_urls={
         "Homepage": "https://github.com/rzashakeri/gpt4free-python-package",
